@@ -10,5 +10,7 @@ public class repotest{
 		con.println("budadahj");
 		con.println("brooooooo");
 		con.println("we need money");
+		con.println("vroooooo");
+		con.println("cduddeeeeee");
 	}
 }
