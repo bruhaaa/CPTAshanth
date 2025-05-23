@@ -8,6 +8,7 @@ public class repotest{
 		con.println("bruh:");
 		con.println("aaaa");
 		con.println("budadahj");
-		
+		con.println("brooooooo");
+		con.println("we need money");
 	}
 }
