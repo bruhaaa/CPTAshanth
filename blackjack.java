@@ -7,29 +7,31 @@ public class blackjack{
 		Console con = new Console("Blackjack", 1280, 720);
 		String strUser;
 		int intInput;
-		int intCard[][];
+		int intDeck[][];
 		int intBal = 1000;
-		
+		int intCount;
+		int intSuit;
+		int intRandom = (int)(Math.random()*100+1);
 		// deck of cards
-		intCard = new int[52][3];
+		intDeck = new int[52][3];
 		
-		//the diamonds
-		//diamond ace
-		intCard[0][0] = 1;
-		intCard[0][1] = 1;
-		intCard[0][2] = (int)(Math.random()*100+1);
+		
+	
+		
+	
+		intDeck[0][0] = 1;
+		intDeck[0][1] = 1;
+		intDeck[0][2] = intRandom;
 		
 		//2 of diamond
-		intCard[1][0] = 2;
-		intCard[1][1] = 1;
-		intCard[1][2] = (int)(Math.random()*100+1);
+		intDeck[1][0] = 2;
+		intDeck[1][1] = 1;
+		intDeck[1][2] = intRandom;
 		
 		// 3 of diamond
-		intCard[2][0] = 3;
-		intCard[2][1] = 1;
-		intCard[2][2] = (int)(Math.random()*100+1);
-		
-		//4 of diamond
+		intDeck[2][0] = 3;
+		intDeck[2][1] = 1;
+		intDeck[2][2] = intRandom;
 		
 	}
 
