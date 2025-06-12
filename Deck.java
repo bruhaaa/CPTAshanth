@@ -1,14 +1,13 @@
 import arc.*;
 
 public class Deck{
-	public static void main(String[] args){
-		Console con = new Console();
-		int intDeck[][];
-		intDeck = new int[52][3];
-		int intSuit; 
-		int intValue;
-		
-		 // Initialize deck with random numbers
+    public static int[][] shuffledeck(){
+        int intDeck[][];
+        intDeck = new int[52][3];
+        int intSuit; 
+        int intValue;
+
+        // Initialize deck with random numbers
         for(intSuit = 1; intSuit <= 4; intSuit++){
             for(intValue = 1; intValue <= 13; intValue++){
                 int intRandom = (int)(Math.random() * 100 + 1);
@@ -19,7 +18,7 @@ public class Deck{
         }
 
 
-        // Bubble sorts the deck, shuffling everything
+        // Bubble sort 
         int intCount; 
         int intCount2;
         int intTempSuit ;
@@ -44,7 +43,7 @@ public class Deck{
             }
         }
 		
-	
-	
+		
+		return intDeck;
 	}
 }
